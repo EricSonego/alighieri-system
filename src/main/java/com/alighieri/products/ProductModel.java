@@ -41,9 +41,9 @@ public class ProductModel {
     public Date getDate() {return dateCreated;}
     public void setDate(Date dateCreated) {this.dateCreated = dateCreated;}
 
-    public BigDecimal getCost() {return costPrice;}
-    public void setCost(BigDecimal costPrice) {this.costPrice = costPrice;}
+    public BigDecimal getCostPrice() {return costPrice;}
+    public void setCostPrice(BigDecimal costPrice) {this.costPrice = costPrice;}
 
-    public BigDecimal getSelling() {return sellingPrice;}
-    public void setSelling(BigDecimal sellingPrice) {this.sellingPrice = sellingPrice;}
+    public BigDecimal getSellingPrice() {return sellingPrice;}
+    public void setSellingPrice(BigDecimal sellingPrice) {this.sellingPrice = sellingPrice;}
 }
