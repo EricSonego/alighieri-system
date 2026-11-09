@@ -27,8 +27,8 @@ public class EmployeeModel {
     public Integer getId() {return idEmp;}
     public void setId(Integer idEmp) {this.idEmp = idEmp;}
 
-    public String getName() {return nameEmp;}
-    public void setName(String nameEmp) {this.nameEmp = nameEmp;}
+    public String getNameEmp() {return nameEmp;}
+    public void setNameEmp(String nameEmp) {this.nameEmp = nameEmp;}
 
     public Date getDateCreated() {return dateCreated;}
     public void setDateCreated() {this.dateCreated = dateCreated;}
