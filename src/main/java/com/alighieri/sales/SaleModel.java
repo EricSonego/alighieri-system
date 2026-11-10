@@ -12,10 +12,10 @@ public class SaleModel {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer idSale;
 
-    @Column(name = "id_emp")
+    @JoinColumn(name = "id_emp", nullable = false)
     private Integer idEmp;
 
-    @Column(name = "id_prod")
+    @JoinColumn(name = "id_prod", nullable = false)
     private Integer idProd;
 
     @Column(name = "date_sale")
