@@ -27,13 +27,13 @@ public class SaleModel {
     public SaleModel() {}
 
     // get and set
-    public Long getIdSale() {return idSale}
+    public Long getIdSale() {return idSale;}
     public void setIdSale(Long idSale) {this.idSale = idSale;}
 
-    public Long getIdEmp() {return idEmp}
+    public Long getIdEmp() {return idEmp;}
     public void setidEmp(Long idEmp) {this.idEmp = idEmp;}
 
-    public Long getIdProd() {return idProd}
+    public Long getIdProd() {return idProd;}
     public void setIdProd(Long idProd) {this.idProd = idProd;}
 
     public Date getDateSale() {return dateSale;}
