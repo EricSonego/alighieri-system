@@ -10,13 +10,13 @@ import java.util.Date;
 public class SaleModel {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long idSale;
+    private Integer idSale;
 
     @Column(name = "id_emp")
-    private Long idEmp;
+    private Integer idEmp;
 
     @Column(name = "id_prod")
-    private Long idProd;
+    private Integer idProd;
 
     @Column(name = "date_sale")
     private Date dateSale;
@@ -27,14 +27,14 @@ public class SaleModel {
     public SaleModel() {}
 
     // get and set
-    public Long getIdSale() {return idSale;}
-    public void setIdSale(Long idSale) {this.idSale = idSale;}
+    public Integer getIdSale() {return idSale;}
+    public void setIdSale(Integer idSale) {this.idSale = idSale;}
 
-    public Long getIdEmp() {return idEmp;}
-    public void setidEmp(Long idEmp) {this.idEmp = idEmp;}
+    public Integer getIdEmp() {return idEmp;}
+    public void setidEmp(Integer idEmp) {this.idEmp = idEmp;}
 
-    public Long getIdProd() {return idProd;}
-    public void setIdProd(Long idProd) {this.idProd = idProd;}
+    public Integer getIdProd() {return idProd;}
+    public void setIdProd(Integer idProd) {this.idProd = idProd;}
 
     public Date getDateSale() {return dateSale;}
     public void setDateSale(Date dateSale) {this.dateSale = dateSale;}
