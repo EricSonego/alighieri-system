@@ -16,7 +16,7 @@ public class SaleController {
     // get all sales
     @GetMapping
     public ResponseEntity<List<SaleModel>> getAllSales() {
-        return ResponseEntity.status(HttpStatus.CREATED).body(saleRepository.findAll());
+        return ResponseEntity.status(HttpStatus.OK).body(saleRepository.findAll());
     }
 
     // post sale

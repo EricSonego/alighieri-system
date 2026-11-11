@@ -1,5 +1,7 @@
 package com.alighieri.sales;
 
+import com.alighieri.employees.EmployeeModel;
+import com.alighieri.products.ProductModel;
 import jakarta.persistence.*;
 
 import java.math.BigDecimal;
@@ -12,16 +14,18 @@ public class SaleModel {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer idSale;
 
+    @ManyToOne
     @JoinColumn(name = "id_emp", nullable = false)
-    private Integer idEmp;
+    private EmployeeModel employee;
 
+    @ManyToOne
     @JoinColumn(name = "id_prod", nullable = false)
-    private Integer idProd;
+    private ProductModel product;
 
-    @Column(name = "date_sale")
+    @Column(name = "date_sale", insertable = false, updatable = false)
     private Date dateSale;
 
-    @Column(name = "sale_price", precision = 10, scale = 2)
+    @Column(name = "sale_price", precision = 10, scale = 2, nullable = false)
     private BigDecimal salePrice;
 
     public SaleModel() {}
@@ -30,11 +34,11 @@ public class SaleModel {
     public Integer getIdSale() {return idSale;}
     public void setIdSale(Integer idSale) {this.idSale = idSale;}
 
-    public Integer getIdEmp() {return idEmp;}
-    public void setidEmp(Integer idEmp) {this.idEmp = idEmp;}
+    public EmployeeModel getEmployee() {return employee;}
+    public void setEmployee(EmployeeModel employee) {this.employee = employee;}
 
-    public Integer getIdProd() {return idProd;}
-    public void setIdProd(Integer idProd) {this.idProd = idProd;}
+    public ProductModel getProduct() {return product;}
+    public void setProduct(ProductModel product) {this.product = product;}
 
     public Date getDateSale() {return dateSale;}
     public void setDateSale(Date dateSale) {this.dateSale = dateSale;}
