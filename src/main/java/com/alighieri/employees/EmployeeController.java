@@ -14,13 +14,13 @@ public class EmployeeController {
     private EmployeeRepository employeeRepository;
 
     // get all emnployees
-    @GetMapping
+    @GetMapping("/consult")
     public ResponseEntity<List<EmployeeModel>> getAllEmployees() {
         return ResponseEntity.status(HttpStatus.CREATED).body(employeeRepository.findAll());
     }
 
     // post employees
-    @PostMapping
+    @PostMapping("/register")
     public ResponseEntity<EmployeeModel> saveEmployee(@RequestBody EmployeeModel employeeModel) {
         return ResponseEntity.status(HttpStatus.CREATED).body(employeeRepository.save(employeeModel));
     }

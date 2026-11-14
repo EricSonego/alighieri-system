@@ -14,13 +14,13 @@ public class ProductController {
     private ProductRepository productRepository;
 
     // get all products
-    @GetMapping
+    @GetMapping("/consult")
     public ResponseEntity<List<ProductModel>> getAllProducts() {
         return ResponseEntity.status(HttpStatus.CREATED).body(productRepository.findAll());
     }
 
     // post products
-    @PostMapping
+    @PostMapping("/register")
     public ResponseEntity<ProductModel> saveProduct(@RequestBody ProductModel productModel) {
         return ResponseEntity.status(HttpStatus.CREATED).body(productRepository.save(productModel));
     }

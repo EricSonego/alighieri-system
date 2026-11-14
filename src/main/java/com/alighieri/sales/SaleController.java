@@ -24,7 +24,7 @@ public class SaleController {
     private EmployeeRepository employeeRepository;
 
     // get all sales
-    @GetMapping
+    @GetMapping("/consult")
     public ResponseEntity<List<SaleModel>> getAllSales() {
         return ResponseEntity.status(HttpStatus.OK).body(saleRepository.findAll());
     }
