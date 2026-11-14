@@ -31,7 +31,7 @@ public class EmployeeModel {
     public void setNameEmp(String nameEmp) {this.nameEmp = nameEmp;}
 
     public Date getDateCreated() {return dateCreated;}
-    public void setDateCreated() {this.dateCreated = dateCreated;}
+    public void setDateCreated(Date dateCreated) {this.dateCreated = dateCreated;}
 
     public String getFunctionEmp() {return functionEmp;}
     public void setFunctionEmp(String functionEmp) {this.functionEmp = functionEmp;}
