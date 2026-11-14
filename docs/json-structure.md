@@ -28,10 +28,12 @@
 
 ```json
 {
-  "id_sale": 1,
-  "id_emp": 1,
-  "id_prod": 1,
-  "date_sale": "2026-11-10T20:30:00",
-  "sale_price": 33.00
+  "employee": {
+    "id": 8
+  },
+  "product": {
+    "id": 8
+  },
+  "salePrice": 33.00
 }
 ```
